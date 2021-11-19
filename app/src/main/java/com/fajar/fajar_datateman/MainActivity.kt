@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             TabLayoutMediator.TabConfigurationStrategy { tab,position->
             tab.text=menuTeks[position]
             tab.icon=ResourcesCompat.getDrawable(resources,menuIcon[position],null)
-        });
+        }).attach()
 
     }
 }
